@@ -38,4 +38,6 @@
     bottom: 120px; /* Adjust as per the height of the container */
     height: 200px; /* Expand the container when visible */
     overflow: auto;
+    
+    
 }
