@@ -1,0 +1,41 @@
+.shopping-bag-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.shopping-bag-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.shopping-bag-button:hover {
+    background-color: #0056b3;
+}
+
+.product-container {
+    position: fixed;
+    right: 20px;
+    bottom: 60px; /* Initially positioned below the button */
+    width: 300px; /* Or whatever width you prefer */
+    height: 0; /* Start collapsed */
+    overflow: hidden; /* Hide content initially */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-container.show {
+    bottom: 120px; /* Adjust as per the height of the container */
+    height: 200px; /* Expand the container when visible */
+    overflow: auto;
+}

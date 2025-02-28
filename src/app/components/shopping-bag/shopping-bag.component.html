@@ -1,0 +1,18 @@
+<div class="shopping-bag-container">
+    <!-- Shopping Bag Button -->
+    <button class="shopping-bag-button" (click)="toggleBag()">
+      🛍️ {{ getTotalPrice() }}$
+      <span *ngIf="products.length" class="badge">{{ products.length }}</span>
+    </button>
+  
+    <!-- Dropdown List -->
+    <div class="shopping-bag-dropdown" *ngIf="showItems">
+      <ul>
+        <li *ngFor="let product of products">
+          <img [src]="product.image" width="40"> 
+          <span>{{ product.name }} - {{ product.price }}$</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

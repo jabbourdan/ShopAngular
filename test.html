@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopBag - Online Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FAD992;
+            padding: 15px;
+        }
+
+        .logo img {
+            width: 70px;
+            border-radius: 10px;
+        }
+
+        .date {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Sidebar */
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #7E8CE0;
+            width: 200px;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows items to move to the next line */
+            justify-content: flex-start;
+            /* Align items from left to right */
+            align-items: flex-start;
+            /* Align items to the top */
+            gap: 20px;
+            /* Adds space between items */
+            padding: 20px;
+        }
+
+        .price {
+            margin-top: 10px;
+            display: flex;
+            /* Use Flexbox */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+
+        }
+
+        .product {
+            background-color: #dfe4a3;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            height: 150px;
+            transition: transform 0.3s ease-in-out;
+            /* Smooth transition */
+        }
+
+        .product:hover {
+            transform: scale(1.1);
+            /* Increase size on hover */
+        }
+
+        .product img {
+            width: 120px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            /* Smooth transition */
+        }
+
+        .product:hover img {
+            transform: scale(1.2);
+            /* Make the image larger */
+        }
+
+        .product p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDUJyy910NbuIEhzn2CkO-iu_5HiC5E7VgYQ&s"
+                alt="ShopBag Logo">
+        </div>
+        <div class="date">14/2/2025</div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div>
+                <div class="product">
+                    <img src="https://media.istockphoto.com/id/1414016924/photo/white-mockup-mug-with-copy-space-and-houseplant-at-the-background.jpg?s=612x612&w=0&k=20&c=2CCGUMWlr3yJrHGtYAo1ZDPChVfoWRZtAmD9qhwjPko="
+                        alt="Mug">
+                    <p>Mug</p>
+                </div>
+                <p class="price">30$</p>
+            </div>
+            <div>
+                <div class="product">
+                    <img src="https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU="
+                        alt="Shoes">
+                    <p>Shoes</p>
+                </div>
+                <p class="price">90$</p>
+            </div>
+            
+            <div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9yTDLbXBO9leCRcs9qSZTwX8E1Hy5GPicQ&s"
+                        alt="Phone Case">
+                    <p>Phone Case</p>
+                </div>
+                <p class="price">12$</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
